@@ -1,18 +1,15 @@
 <?php
-numero = 8;
+
+$numero = 0;
 
 
 $numero = htmlspecialchars($_POST["numero"]);
 
-if($numero == 0){
-            echo $numero . ' el numero tiene que ser diferente de 0';
+if($numero != 0 && ($numero % 2) == 0){
+        echo $numero . ' es par';
     }
 else{
-     if(($numero % 2) == 0){
-        echo $numero . ' es par';
-    
-    }else{
-        echo $numero . ' es impar';
-    }
+     echo $numero . 'el numero tiene que ser diferente de 0';
 }
+
 ?>
